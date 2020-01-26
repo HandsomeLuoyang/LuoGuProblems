@@ -3,9 +3,9 @@
 using namespace std;
 int n, r, a[100];
 
-bool isIn(int tmp, int *a)
+bool isIn(int tmp, int k, int *a)
 {
-    for (int i = 0; i < 100; i++)
+    for (int i = 0; i <= k; i++)
     {
         if (tmp == a[i])
         {
@@ -29,8 +29,9 @@ void dfs(int k)
     {
         for (int i = 1; i <= n; i++)
         {
-            if (isIn(i, a))
+            if (isIn(i, k, a))
             {
+                a[k] = i;
                 continue;
             }
             a[k] = i;
