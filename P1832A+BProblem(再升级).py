@@ -1,0 +1,1 @@
+target = int(input())
