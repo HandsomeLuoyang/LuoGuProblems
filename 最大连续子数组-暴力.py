@@ -1,3 +1,5 @@
+
+# 暴力法 n的三次方
 # 输入一个数组
 target_list = [int(x) for x in input().split()]
 length = len(target_list)
@@ -23,7 +25,7 @@ def normal():
     print("次数:", tt)
 
 def youhua():
-    """稍微优化一下暴力方法"""
+    """稍微优化一下暴力方法，变成n的二次方"""
     global target_list, length
     tt = 0
     max_list = []

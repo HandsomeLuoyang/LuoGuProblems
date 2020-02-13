@@ -1,3 +1,4 @@
+# 动态规划线性时间
 # 输入一个数组
 target_list = [int(x) for x in input().split()]
 
