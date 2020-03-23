@@ -9,12 +9,15 @@ min_ = sorted(target_list, key=lambda x: abs(x))[0]
 sum_list = list()
 sum_ = 0
 
+
 for i in target_list:
     sum_ += i
     sum_list.append(sum_)
 sum_list.sort()
 
+# 按绝对值从小到大排序取第一个，即绝对值最接近0的
 other_min = sorted(sum_list, key=lambda x: abs(x))[0]
+
 for i in range(len(target_list)-1):
     other_min = other_min if abs(other_min) < (
         sum_list[i+1] - sum_list[i]) else (sum_list[i+1] - sum_list[i])
